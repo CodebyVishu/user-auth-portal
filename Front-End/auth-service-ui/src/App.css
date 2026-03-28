@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  min-height: 100vh;
+}
+
+.home-box {
+  background: white;
+  width: 500px;
+  padding: 50px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.home-box h1 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.home-box p {
+  margin-bottom: 25px;
+  color: #666;
+}
+
+.logout-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #667eea;
   color: white;
+  border-radius: 8px;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.logout-btn:hover {
+  background: #5a67d8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-box {
+  background: white;
+  width: 380px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.login-box h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.login-box p {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #666;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.login-box input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #667eea;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background: #5a67d8;
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup-text a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.error {
+  display: block;
+  color: red;
+  font-size: 13px;
+  margin-top: -12px;
+  margin-bottom: 12px;
+}
+
+.api-error {
+  color: #dc2626;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.api-message {
+  color: #16a34a;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
 }
